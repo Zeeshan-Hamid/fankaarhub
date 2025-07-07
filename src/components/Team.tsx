@@ -4,22 +4,22 @@ import { Linkedin, Twitter, Mail } from 'lucide-react';
 const Team = () => {
   const teamMembers = [
     {
-      name: 'Ahmad Shahzad',
-      designation: 'CEO & Founder',
-      description: 'Visionary leader with 10+ years in creative industry and talent management across Pakistan.',
-      image: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=400',
+      name: 'Saqib Rehman',
+      designation: 'MISSION',
+      description: 'To create a platform where raw student talent meets real industry opportunities giving every Fankaar the stage they deserve',
+      image: 'src/assets/images/WhatsApp Image 2025-07-06 at 3.05.20 PM.jpeg',
     },
     {
-      name: 'Sania Mirza',
-      designation: 'Head of Operations',
-      description: 'Strategic operations expert ensuring seamless artist-client connections and platform growth.',
-      image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=400',
+      name: 'Ali jan Muhammad',
+      designation: 'EXECUTION',
+      description: "We're not just dreamers -we're doers. Every move we make is a step toward build-ing a culture of collaboration creativity, and opportunity.",
+      image: 'src/assets/images/WhatsApp Image 2025-07-06 at 3.05.19 PM.jpeg',
     },
     {
-      name: 'Bilal Ahmed',
-      designation: 'Creative Director',
-      description: 'Creative mastermind curating exceptional artistic experiences and managing artist portfolios.',
-      image: 'https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=400',
+      name: 'Abdul Moiz',
+      designation: 'VISION',
+      description: 'To become the go-to creative bridge between media students and the professional world, where talent is not just discovered it\'s celebrated.',
+      image: 'src/assets/images/fc9f26a3-7f61-427d-9d69-8dbf82c289ef.jpg'
     },
   ];
 
@@ -28,7 +28,7 @@ const Team = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-            Meet Our <span className="bg-gradient-to-r from-sky-600 via-blue-600 to-cyan-600 bg-clip-text text-transparent">Team</span>
+            Meet Our <span className="text-[#095373]">Team</span>
           </h2>
           <p className="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto">
             The passionate minds behind FunkaarHub, dedicated to connecting talent with opportunity
