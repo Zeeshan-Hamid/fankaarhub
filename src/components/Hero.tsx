@@ -6,17 +6,17 @@ const Hero = () => {
     {
       name: 'Ayza Zahid',
       role: 'Creative Writer',
-      image: 'src/assets/images/1 (6).jpeg'
+      image: '/images/1 (6).jpeg'
     },
     {
       name: 'Eesa Ahmad',
       role: 'Director',
-      image: 'src/assets/images/1 (5).jpeg'
+      image: '/images/1 (5).jpeg'
     },
     {
       name: 'Aima Saqlain',
       role: 'Voice Artist',
-      image: 'src/assets/images/1 (3).jpeg'
+      image: '/images/1 (3).jpeg'
     }
   ];
 

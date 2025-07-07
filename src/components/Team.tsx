@@ -7,19 +7,19 @@ const Team = () => {
       name: 'Saqib Rehman',
       designation: 'MISSION',
       description: 'To create a platform where raw student talent meets real industry opportunities giving every Fankaar the stage they deserve',
-      image: 'src/assets/images/WhatsApp Image 2025-07-06 at 3.05.20 PM.jpeg',
+      image: '/images/WhatsApp Image 2025-07-06 at 3.05.20 PM.jpeg',
     },
     {
       name: 'Ali jan Muhammad',
       designation: 'EXECUTION',
       description: "We're not just dreamers -we're doers. Every move we make is a step toward build-ing a culture of collaboration creativity, and opportunity.",
-      image: 'src/assets/images/WhatsApp Image 2025-07-06 at 3.05.19 PM.jpeg',
+      image: '/images/WhatsApp Image 2025-07-06 at 3.05.19 PM.jpeg',
     },
     {
       name: 'Abdul Moiz',
       designation: 'VISION',
       description: 'To become the go-to creative bridge between media students and the professional world, where talent is not just discovered it\'s celebrated.',
-      image: 'src/assets/images/fc9f26a3-7f61-427d-9d69-8dbf82c289ef.jpg'
+      image: '/images/fc9f26a3-7f61-427d-9d69-8dbf82c289ef.jpg'
     },
   ];
 
