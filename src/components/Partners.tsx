@@ -2,16 +2,32 @@ import React from 'react';
 
 const Partners = () => {
   const partners = [
-    'ARY Digital',
-    'Geo Entertainment',
-    'Hum TV',
-    'Express Entertainment',
-    'Urdu 1',
-    'A-Plus Entertainment',
-    'BOL Entertainment',
-    'Aaj Entertainment',
-    'PTV Home',
-    'TV One',
+ 
+    {
+      name: 'Geo Entertainment',
+      logo: '/images/geo.jpg',
+    },
+    {
+      name: 'Hum TV',
+      logo: '/images/hum.jpg',
+    },
+    {
+      name: 'Express Entertainment',
+      logo: '/images/express.jpg',
+    },
+    {
+      name: 'Urdu 1',
+      logo: '/images/urdu1.jpg',
+    },
+    {
+      name: 'A-Plus Entertainment',
+      logo: '/images/A-Plus_TV_Logo.png',
+    },
+    {
+      name: 'BOL Entertainment',
+      logo: '/images/bol.jpg',
+    },
+    
   ];
 
   return (
@@ -34,13 +50,22 @@ const Partners = () => {
                 className="flex-shrink-0 mx-4 sm:mx-6 bg-white/10 backdrop-blur-sm rounded-2xl px-6 sm:px-8 py-6 sm:py-8 hover:bg-white/20 transition-all duration-500 transform hover:scale-110 hover:-translate-y-2 cursor-pointer group"
               >
                 <div className="text-center">
-                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#E77C25] rounded-2xl mx-auto mb-4 flex items-center justify-center group-hover:rotate-12 transition-transform duration-500 shadow-lg">
-                    <span className="text-white font-bold text-lg sm:text-xl">
-                      {partner.charAt(0)}
-                    </span>
+                  <div className="w-24 h-24 sm:w-28 sm:h-28 bg-white/10 rounded-2xl mx-auto mb-4 flex items-center justify-center overflow-hidden group-hover:bg-white/20 transition-all duration-500">
+                    <img 
+                      src={partner.logo} 
+                      alt={`${partner.name} logo`}
+                      className="max-w-full max-h-full object-contain p-2"
+                      onError={(e) => {
+                        // Fallback to displaying the first letter if image fails to load
+                        e.currentTarget.style.display = 'none';
+                        if (e.currentTarget.parentElement) {
+                          e.currentTarget.parentElement.innerHTML = `<span class="text-white font-bold text-3xl">${partner.name.charAt(0)}</span>`;
+                        }
+                      }}
+                    />
                   </div>
                   <h3 className="text-white font-semibold text-sm sm:text-lg whitespace-nowrap group-hover:text-[#E77C25] transition-colors duration-300">
-                    {partner}
+                    {partner.name}
                   </h3>
                 </div>
               </div>
