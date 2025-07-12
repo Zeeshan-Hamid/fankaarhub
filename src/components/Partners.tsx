@@ -4,29 +4,22 @@ const Partners = () => {
   const partners = [
  
     {
-      name: 'Geo Entertainment',
-      logo: '/images/geo.jpg',
+      name: 'Shoes String',
+      logo: '',
     },
     {
-      name: 'Hum TV',
-      logo: '/images/hum.jpg',
+      name: 'Octaverse',
+      logo: '',
     },
     {
-      name: 'Express Entertainment',
-      logo: '/images/express.jpg',
+      name: 'Creative Expressions',
+      logo: '',
     },
     {
-      name: 'Urdu 1',
-      logo: '/images/urdu1.jpg',
+      name: 'Amberz commerce',
+      logo: '',
     },
-    {
-      name: 'A-Plus Entertainment',
-      logo: '/images/A-Plus_TV_Logo.png',
-    },
-    {
-      name: 'BOL Entertainment',
-      logo: '/images/bol.jpg',
-    },
+    
     
   ];
 

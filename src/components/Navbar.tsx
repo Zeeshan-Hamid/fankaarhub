@@ -18,27 +18,24 @@ const Navbar = () => {
     <>
       <nav className="bg-white/95 backdrop-blur-md shadow-lg fixed w-full top-0 z-50 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
+          <div className="grid grid-cols-3 items-center h-16">
             {/* Hamburger Menu */}
-            <button
-              onClick={() => setIsMenuOpen(true)}
-              className="p-2 rounded-lg text-[#333333] hover:text-[#095373] hover:bg-gray-100 transition-all duration-200"
-            >
-              <Menu size={24} />
-            </button>
+            <div className="flex justify-start">
+              <button
+                onClick={() => setIsMenuOpen(true)}
+                className="p-2 rounded-lg text-[#333333] hover:text-[#095373] hover:bg-gray-100 transition-all duration-200"
+              >
+                <Menu size={24} />
+              </button>
+            </div>
 
             {/* Logo */}
-            <div className="flex items-center space-x-2">
-              <div className="bg-[#095373] p-2 rounded-xl shadow-lg">
-                <Camera className="text-white" size={24} />
-              </div>
-              <span className="text-2xl font-bold text-[#095373]">
-                FunkaarHub
-              </span>
+            <div className="flex justify-center items-center">
+              <img src="/images/logo.jpeg" alt="FunkaarHub" className="h-12" />
             </div>
 
             {/* Auth Buttons */}
-            <div className="flex items-center space-x-3">
+            <div className="flex justify-end items-center space-x-3">
               <button className="text-[#333333] hover:text-[#095373] transition-colors duration-200 font-medium px-3 py-2 rounded-lg hover:bg-gray-100">
                 Login
               </button>
@@ -57,12 +54,7 @@ const Navbar = () => {
           <div className="fixed left-0 top-0 bottom-0 w-80 bg-white/95 backdrop-blur-md shadow-2xl transform transition-transform duration-300 ease-out">
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
               <div className="flex items-center space-x-2">
-                <div className="bg-[#095373] p-2 rounded-xl shadow-lg">
-                  <Camera className="text-white" size={20} />
-                </div>
-                <span className="text-xl font-bold text-[#095373]">
-                  FunkaarHub
-                </span>
+                <img src="/images/logo.jpeg" alt="FunkaarHub" className="h-10" />
               </div>
               <button
                 onClick={() => setIsMenuOpen(false)}

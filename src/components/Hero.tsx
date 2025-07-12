@@ -158,10 +158,10 @@ const Hero = () => {
         {/* Stats section */}
         <div ref={counterRef} className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
-            { value: 500, label: 'Artists', icon: '🎭' },
-            { value: 50, label: 'Media Partners', icon: '🏢' },
-            { value: 200, label: 'Projects', icon: '📝' },
-            { value: 1000, label: 'Success Stories', icon: '🏆' }
+            { value: 6, label: 'Artists', icon: '🎭' },
+            { value: 4, label: 'Media Partners', icon: '🏢' },
+            { value: 20, label: 'Projects', icon: '📝' },
+            { value: 6, label: 'Success Stories', icon: '🏆' }
           ].map((stat, index) => (
             <div key={index} className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 text-center hover:bg-white/10 transition-colors duration-300">
               <div className="text-2xl mb-2">{stat.icon}</div>
